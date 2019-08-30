@@ -15,6 +15,10 @@ public class Login
 {
 	public static final String SERVLET_URL = "login.jsp";
 	
+	public static final String SIGNUP_URL = "signup.html";
+	
+	
+	
 	
 	public static void main(String[] args)
 	{
@@ -82,7 +86,7 @@ public class Login
 		
 		
 		HTMLAnchorElement link = new HTMLAnchorElementBuilder().textContent(" Crea un Account.")
-																.href("signup.html")
+																.href(SIGNUP_URL)
 																.build();
 		
 		

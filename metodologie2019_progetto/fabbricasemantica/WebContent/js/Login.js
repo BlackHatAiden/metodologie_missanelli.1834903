@@ -23,7 +23,7 @@ var quickstart;
             let divButtons = new quickstart.HTMLDivElementBuilder().className("form-group").build();
             $(divButtons).append(bottoneLogin);
             let labelSignup = new quickstart.HTMLLabelElementBuilder().textContent("Nuovo su FabbricaSemantica ? ").build();
-            let link = new quickstart.HTMLAnchorElementBuilder().textContent(" Crea un Account.").href("signup.html").build();
+            let link = new quickstart.HTMLAnchorElementBuilder().textContent(" Crea un Account.").href(Login.SIGNUP_URL).build();
             let divSignup = new quickstart.HTMLDivElementBuilder().build();
             $(divSignup).append(labelSignup).append(link);
             $(form).append(divInizio);
@@ -50,6 +50,7 @@ var quickstart;
         }
     }
     Login.SERVLET_URL = "login.jsp";
+    Login.SIGNUP_URL = "signup.html";
     quickstart.Login = Login;
     Login["__class"] = "quickstart.Login";
 })(quickstart || (quickstart = {}));

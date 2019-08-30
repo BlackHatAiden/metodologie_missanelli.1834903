@@ -16,6 +16,9 @@ public class Signup
 {
 	public static final String SERVLET_URL = "signup.jsp";
 
+	public static final String LOGIN_URL = "login.html";
+
+	
 	public static void main(String[] args) 
 	{
 		
@@ -169,7 +172,6 @@ public class Signup
 																	  .name("Signup")
 																	  .className("btn btn-primary")
 																	  .value("Signup") 
-																	  .src("signup.jsp")
 																	  .build();
 		
 		
@@ -183,7 +185,7 @@ public class Signup
 		labelLogin.textContent = "Sei già registrato ? ";
 		
 		HTMLAnchorElement link = new HTMLAnchorElementBuilder().textContent(" Accedi a Fabbricasemantica")
-																.href("login.html")
+																.href(LOGIN_URL)
 																.build();
 		
 		HTMLDivElement divLink= new HTMLDivElementBuilder().className("form-group")

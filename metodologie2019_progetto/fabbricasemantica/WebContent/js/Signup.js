@@ -54,12 +54,12 @@ var quickstart;
             $(levelEng).append(MM, A11, A22, B11, B22, C11, C22);
             let divLingua2 = new quickstart.HTMLDivElementBuilder().className("form-group").build();
             $(divLingua2).append(checkBoxEng).append(labelInglese).append(levelEng);
-            let bottoneSignup = new quickstart.HTMLInputElementBuilder().type("submit").name("Signup").className("btn btn-primary").value("Signup").src("signup.jsp").build();
+            let bottoneSignup = new quickstart.HTMLInputElementBuilder().type("submit").name("Signup").className("btn btn-primary").value("Signup").build();
             let divButtons = new quickstart.HTMLDivElementBuilder().className("form-group").build();
             $(divButtons).append(bottoneSignup);
             let labelLogin = new quickstart.HTMLLabelElementBuilder().build();
             labelLogin.textContent = "Sei gi\u00e0 registrato ? ";
-            let link = new quickstart.HTMLAnchorElementBuilder().textContent(" Accedi a Fabbricasemantica").href("login.html").build();
+            let link = new quickstart.HTMLAnchorElementBuilder().textContent(" Accedi a Fabbricasemantica").href(Signup.LOGIN_URL).build();
             let divLink = new quickstart.HTMLDivElementBuilder().className("form-group").build();
             $(divLink).append(labelLogin).append(link);
             $(form).append(divInizio);
@@ -98,6 +98,7 @@ var quickstart;
         }
     }
     Signup.SERVLET_URL = "signup.jsp";
+    Signup.LOGIN_URL = "login.html";
     quickstart.Signup = Signup;
     Signup["__class"] = "quickstart.Signup";
 })(quickstart || (quickstart = {}));

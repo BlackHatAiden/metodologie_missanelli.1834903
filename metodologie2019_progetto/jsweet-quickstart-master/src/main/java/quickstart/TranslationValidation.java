@@ -21,6 +21,10 @@ public class TranslationValidation
 	
 	public static final String LOGIN_URL = "login.html";
 	
+	public static final String HOME_URL = "home.html";
+	
+	public static final String LOGOUT_URL = "logout.jsp";
+	
 
 	public static void main(String[] args) 
 	{
@@ -123,11 +127,11 @@ public class TranslationValidation
 		
 		HTMLLabelElement labelLogout = new HTMLLabelElementBuilder().textContent("Se vuoi effettuare il Logout ").build() ;
 		
-		HTMLAnchorElement logout = new HTMLAnchorElementBuilder().href("logout.jsp")
+		HTMLAnchorElement logout = new HTMLAnchorElementBuilder().href(LOGOUT_URL)
 																.textContent(" Clicca qui")
 																.build() ;
 													
-		HTMLAnchorElement linkHome = new HTMLAnchorElementBuilder().href("home.html")
+		HTMLAnchorElement linkHome = new HTMLAnchorElementBuilder().href(HOME_URL)
 													                .textContent("Home")
 													                .build();
 															
